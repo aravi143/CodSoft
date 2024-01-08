@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container1">
+            <nav>
+                <h1 style="font-size: 2rem;"><span style="color: blue; font-size:3rem; width: 140px;">P</span>ortfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="header-text">
+        <p>Front end developer</p>
+        <h1>Hi, I am Aravind Kumar</h1>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="./assets/IMG_20210408_134256.jpg">
+                </div>
+                <div class="col-2">
+                    <h2 class="title" style="font-size: 50px;">About Me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quasi voluptate soluta ex. Rem minus nisi ullam, laboriosam repellendus animi distinctio quo, consequuntur voluptas dicta impedit, deserunt laudantium et enim?</p>
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                  </div> 
+                  <div class="tab-contents active-content" id="skills">
+                    <ul>
+                        <li>HTML,CSS</li>
+                        <li>Javascript</li>
+                        <li>MS word</li>
+                    </ul>
+                  </div>  
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Application Development</li>
+                        <li>MS word</li>
+                    </ul>
+                  </div>  
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li>SSC(2015)</li>
+                        <li>Inter(2017)</li>
+                        <li>Btech(2021)</li>
+                    </ul>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h2 class="title"style="font-size: 50px;">Projects</h2>
+            <div class="project-list">
+                <div class="list">
+                   <h3><a href="#" style="text-decoration: none; color: yellow;">Blinkit-clone</a></h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus quis eos ipsum. Dolorem, dolor architecto id exercitationem autem excepturi facere animi culpa porro aliquam quasi, et cumque perferendis assumenda.</p>
+                </div>
+             
+                <div class="list">
+                   <h3><a href="#" style="text-decoration: none; color:blue;">Employee Management system</a></h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus quis eos ipsum. Dolorem, dolor architecto id exercitationem autem excepturi facere animi culpa porro aliquam quasi, et cumque perferendis assumenda.</p>
+                </div>
+             
+                <div class="list">
+                   <h3><a href="#" style="text-decoration: none; color:green;">Google sheet clone</a></h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus quis eos ipsum. Dolorem, dolor architecto id exercitationem autem excepturi facere animi culpa porro aliquam quasi, et cumque perferendis assumenda.</p>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact-list">
+          <h1 style="font-size: 50px;">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>aravindchinna225@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>9959570246</p>
+          <div id="social-links">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+    </div>
+    <footer class="copyright">
+        <p>&copy; Aravind Kumar-2024</p>
+    </footer>
+    <script src="./project.js"></script>
+</body>
+</html>
